@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cache Redis + MariaDB</title>
+</head>
+<body>
+
+    <h2>Buscar valor</h2>
+
+    <form method="POST">
+        <input type="text" name="key" placeholder="Digite a chave (ex: 1)" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if result %}
+        <h3>Resultado:</h3>
+        <p>{{ result }}</p>
+
+        <h4>Status:</h4>
+        <p>{{ status }}</p>
+    {% endif %}
+
+</body>
+</html>
